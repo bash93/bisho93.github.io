@@ -1,0 +1,104 @@
+body{
+    background: white;
+    
+}
+.header{
+   
+    text-align: left;
+    background: rgb(100, 50, 133); 
+    padding-bottom:5%;
+    padding-top: 3%;
+    border-bottom: 5px ridge;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    height: 50%;
+}
+.tworows article{
+   text-align: left;
+   padding: 20px;
+   width: 30%;
+   justify-content: space-between;
+    
+}
+.tworows{
+    display:flex;
+    width:80%;
+}
+.tworows article h3{
+    font-size: 15pt;
+}
+.tworows article:first-child :hover{
+    background:rgba(243, 179, 190, 0.87);
+    font-style: italic;
+    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50%;
+    padding-left:2%;
+    
+}
+
+#divBackground{
+    background:rgba(24, 19, 190, 0.87);
+}
+
+
+footer{
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 100px;
+}
+
+.nested{
+    display: block;
+    flex-direction:column;
+    }
+
+@media (max-width: 500px){
+    .tworows{
+        display:inline-block;
+        width:70%;
+    }
+    .tworows article{
+        text-align: left;
+        padding: 50px;
+        width: 75%;
+        font-size:15pt;
+        justify-content: space-between;
+        align-items: center;
+     }
+    
+    
+}
+@media (min-width:850px){
+    
+    .tworows article{
+       text-align: left;
+       padding: 20px;
+       width: 70%;
+       justify-content: space-between;
+       font-size:15pt;
+    }
+    .nested{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+@media (min-width:1000px){
+    
+
+    .tworows article h3{
+        font-size:20pt;
+    }
+
+}
